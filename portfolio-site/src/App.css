@@ -46,4 +46,24 @@ body{
   font-size: 1rem;
 }
 
+.read-me-btn {
+  background-color: #4CAF50; /* Green background */
+  border: none; /* No border */
+  color: white; /* White text */
+  padding: 10px 20px; /* Some padding */
+  text-align: center; /* Center text */
+  text-decoration: none; /* No underline */
+  display: inline-block; /* Display as inline block */
+  font-size: 16px; /* Font size */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Change mouse cursor on hover */
+  transition-duration: 0.4s; /* Add a transition effect */
+  margin-top: 20px; /* Add 20 pixels of margin on top */
+}
+
+.read-me-btn:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+}
+
+
 
