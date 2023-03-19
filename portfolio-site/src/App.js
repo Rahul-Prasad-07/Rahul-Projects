@@ -47,11 +47,11 @@ const ProjectList = ()=>{
     {projects.map((project)=>{
 
       //console.log(project); // I know in that project all my properties lies
-      const {img, title, author,id} = project // i want to pass my entire objects to reduce burden
+      //const {img, title, author,id} = project // i want to pass my entire objects to reduce burden
 
       return(
         
-        <Project project={project} key={project.id}/>
+        <Project {...project} key={project.id}/> // passing object using spread operaters
       )
     })}
     
@@ -63,9 +63,9 @@ const ProjectList = ()=>{
 
 // All our logig is here :--> structure of element what we want to return at website
 
-const Project = ({project:{img, title, author,children}})=>{
+const Project = (props)=>{
   // to pull the properties i need to do props.project
-  //const {img, title, author, children} = props.project;  // or just simple pass in function parameter inplace of props
+  const {img, title, author, children} = props;  // by using spread operater .. there is  no any book so remove it
   return(
     <article className='project'>
       <div className="container">
@@ -88,7 +88,7 @@ export default App;
 /*
 --> Pass the entire object
 - render component
-- Destructuring object
+- by using spread operater
 
 
 */
