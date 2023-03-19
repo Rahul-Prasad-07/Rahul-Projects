@@ -30,6 +30,7 @@ function App() {
       <ProjectList/>
       <ProjectList/>
       <ProjectList/>
+      <ProjectList/>
       
     </div>
   );
@@ -44,6 +45,7 @@ const ProjectList = ()=>{
         </a>
     </Project>
     <Project title = {SecondBlog.title} img={SecondBlog.img}/>
+    
     
     
   </section>
@@ -73,7 +75,7 @@ export default App;
 
 /*
 
-chilren prop
+children prop
 - everything we render btw component tags
 - during that corse we will mostely use it contex api
 - special props has to be children
