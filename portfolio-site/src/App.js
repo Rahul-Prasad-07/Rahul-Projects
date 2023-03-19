@@ -47,11 +47,11 @@ const ProjectList = ()=>{
     {projects.map((project)=>{
 
       //console.log(project); // I know in that project all my properties lies
-      const {img, title, author,id} = project // then pass it as return project tag
-      
+      const {img, title, author,id} = project // i want to pass my entire objects to reduce burden
+
       return(
         
-        <Project img={img} title ={title} author={author} key={id}/>
+        <Project project={project} key={project.id}/>
       )
     })}
     
@@ -63,8 +63,9 @@ const ProjectList = ()=>{
 
 // All our logig is here :--> structure of element what we want to return at website
 
-const Project = ({img, title, author, children})=>{
-  // const {img, title, author} = props;
+const Project = ({project:{img, title, author,children}})=>{
+  // to pull the properties i need to do props.project
+  //const {img, title, author, children} = props.project;  // or just simple pass in function parameter inplace of props
   return(
     <article className='project'>
       <div className="container">
@@ -83,3 +84,11 @@ const Project = ({img, title, author, children})=>{
 }
 
 export default App;
+
+/*
+--> Pass the entire object
+- render component
+- Destructuring object
+
+
+*/
