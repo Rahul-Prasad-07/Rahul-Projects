@@ -44,16 +44,17 @@ const ProjectList = ()=>{
 }
 
 // structure of element what we want to return at website
-const Project = (props)=>{
+const Project = ({img, title, author})=>{
+  // const {img, title, author} = props;
   return(
     <article className='project'>
       <div class="container">
         <div className='img'>
-           <img src={props.img}  alt={props.title}/>
+           <img src={img}  alt={title}/>
         </div>
       
-      <h2>{props.title}</h2>
-      <h2>{props.author}</h2>
+      <h2>{title}</h2>
+      <h2>{author}</h2>
       </div>
     </article>
 
