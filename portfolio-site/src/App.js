@@ -37,14 +37,20 @@ function App() {
 
 const ProjectList = ()=>{
   return <section className='projectlist'>
-    <Project title = {firstBlog.title} img={firstBlog.img} author={firstBlog.author}/>
+    <Project title = {firstBlog.title} img={firstBlog.img} author={firstBlog.author}> 
+    
+        <a href="https://rahulprasad.hashnode.dev/diving-into-docker-a-beginners-first-project" target="_blank" rel="noopener noreferrer">
+            <button className='read-me-btn'>Read Me</button>
+        </a>
+    </Project>
     <Project title = {SecondBlog.title} img={SecondBlog.img}/>
+    
     
   </section>
 }
 
 // structure of element what we want to return at website
-const Project = ({img, title, author})=>{
+const Project = ({img, title, author, children})=>{
   // const {img, title, author} = props;
   return(
     <article className='project'>
@@ -55,6 +61,7 @@ const Project = ({img, title, author})=>{
       
       <h2>{title}</h2>
       <h2>{author}</h2>
+      {children}
       </div>
     </article>
 
@@ -63,3 +70,12 @@ const Project = ({img, title, author})=>{
 }
 
 export default App;
+
+/*
+
+chilren prop
+- everything we render btw component tags
+- during that corse we will mostely use it contex api
+- special props has to be children
+- can place anywhere in jsx
+*/
