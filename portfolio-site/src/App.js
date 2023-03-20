@@ -66,9 +66,9 @@ const Project = (props)=>{
   // to pull the properties i need to do props.project
   const {img, title, author, children, getProject,id} = props;  
 
-  const getSingleproject =()=>{
-    getProject(id);
-  } // pass thet get singleproject funstion in onclick
+  // const getSingleproject =()=>{
+  //   getProject(id);
+  // } // pass thet get singleproject funstion in onclick
 
 
   return(
@@ -79,7 +79,7 @@ const Project = (props)=>{
         </div>
       
       <h2>{title}</h2>
-      <button onClick={getSingleproject}> Click me  </button>
+      <button onClick={()=>getProject(id) /* pass anonymus funtion inreplace getSingleProject */}> Click me  </button> 
       <h2>{author}</h2>
       {children}
       </div>
@@ -105,7 +105,8 @@ export default App;
 Note : we don't know how to use the state and hooks yet
 
 solution : getproject function , pass it as props and then in child as onclick button : stil not calling like ( getprojects(2)--> get in console) but not in onClick(getBooks(id))
-solution --> setup wrapper : in child write function getSingleproject
+solution :1 --> setup wrapper : in child write function getSingleproject
+solution :1 --> pass anonymus function at onclick
 
 
 */
