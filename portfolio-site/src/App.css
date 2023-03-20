@@ -76,7 +76,7 @@ body{
 .read-me-btn {
   background-color: #4CAF50; /* Green background */
   border: none; /* No border */
-  color: white; /* White text */
+  color: rgb(103, 9, 9); /* White text */
   padding: 10px 20px; /* Some padding */
   text-align: center; /* Center text */
   text-decoration: none; /* No underline */
