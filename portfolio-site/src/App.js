@@ -85,13 +85,13 @@ const Project = (props)=>{
 
 const EventExamples =()=>{
 
-  const handleFormInput =()=>{
-    console.log('handle form input');
-  };
+  // const handleFormInput =()=>{
+  //   console.log('handle form input');
+  // };
 
-  const handleButtonClick = ()=>{
-    alert('handle button click');
-  };
+  // const handleButtonClick = ()=>{
+  //   alert('handle button click');
+  // };
 
   return(
     <section>
@@ -100,11 +100,11 @@ const EventExamples =()=>{
         <input 
           type='text'
           name ='example'
-          onChange={handleFormInput}
+          onChange={(e)=>console.log(e.target.value)}
           style={{margin :'1rem 0'}}
         />
       </form>
-      <button style = {{ padding: '10px 20px',  color:'green' }} onClick={handleButtonClick}>Click me </button>
+      <button style = {{ padding: '10px 20px',  color:'green' }} onClick={()=> console.log('click me')}>Click me </button>
     </section>
   )
 }
