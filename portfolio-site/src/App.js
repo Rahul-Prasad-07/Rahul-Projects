@@ -31,6 +31,7 @@ function App() {
   return (
     <div className="App">
       <ProjectList/>
+      <ProjectList/>
       
       
       
@@ -66,6 +67,11 @@ const ProjectList = ()=>{
 const Project = (props)=>{
   // to pull the properties i need to do props.project
   const {img, title, author, children} = props;  // by using spread operater .. there is  no any book so remove it
+
+  const displayTitle = ()=>{
+    console.log(title);
+  } //--> to show this event in our card : show title when click on button
+
   return(
     <article className='project'>
       <div className="container">
@@ -74,6 +80,7 @@ const Project = (props)=>{
         </div>
       
       <h2>{title}</h2>
+      <button onClick={displayTitle}> Display title </button>
       <h2>{author}</h2>
       {children}
       </div>
