@@ -31,9 +31,8 @@ function App() {
   return (
     <div className="App">
       <ProjectList/>
-      <ProjectList/>
-      <ProjectList/>
-      <ProjectList/>
+      
+      
       
     </div>
   );
@@ -54,6 +53,7 @@ const ProjectList = ()=>{
         <Project {...project} key={project.id}/> // passing object using spread operaters
       )
     })}
+    <EventExamples/>
     
     
   </section>
@@ -83,12 +83,38 @@ const Project = (props)=>{
   )
 }
 
+const EventExamples =()=>{
+
+  const handleFormInput =()=>{
+    console.log('handle form input');
+  };
+
+  const handleButtonClick = ()=>{
+    alert('handle button click');
+  };
+
+  return(
+    <section>
+      <form>
+        <h2> FeedBack Form</h2>
+        <input 
+          type='text'
+          name ='example'
+          onChange={handleFormInput}
+          style={{margin :'1rem 0'}}
+        />
+      </form>
+      <button style = {{ padding: '10px 20px',  color:'green' }} onClick={handleButtonClick}>Click me </button>
+    </section>
+  )
+}
+
 export default App;
 
 /*
---> Pass the entire object
-- render component
-- by using spread operater
+--> Events 
+do something like buttuon : onClick, onSubmit, onChange
+- in event example we are goig to setup form example
 
 
 */
