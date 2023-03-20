@@ -1,11 +1,7 @@
 
 import './App.css';
 
-//const title ='Diving into Docker : A Beginners first project';
-//const author = 'Rahul Prasad'
-//const img = 'https://cdn.hashnode.com/res/hashnode/image/upload/v1677321844020/9fc45144-4ab7-4389-bb3a-f1ce63ca2cae.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp'
-
-
+// Notes or Task  : are at the end of the files 
 const projects = [
 
   {
@@ -43,19 +39,20 @@ function App() {
 // Render items on screen 
 // In React we can't render objects directly in jsx --> solution : map data 
 const ProjectList = ()=>{
-  const someVlaue = 'Hello Buddy in console meet me !'
-  const displayValue =()=>{
-    console.log(someVlaue);
+  
+  const getProject = (id)=>{
+    const project = projects.find((project)=> project.id === id);
+    console.log(project)
   }
-  // pass displayValue as project props : Note --> we can only pass props down means parents to children
+  //getProject(1);
   return <section className='projectlist'>
     {projects.map((project)=>{
       return(
       
-        <Project {...project} key={project.id} displayValue={displayValue}/> // passing object using spread operaters
+        <Project {...project} key={project.id} getProject={getProject}/> // passing getproject in children 
       )
     })}
-    <EventExamples/>
+    
     
     
   </section>
@@ -67,8 +64,11 @@ const ProjectList = ()=>{
 
 const Project = (props)=>{
   // to pull the properties i need to do props.project
-  const {img, title, author, children, displayValue} = props;  // by using spread operater .. there is  no any book so remove it
+  const {img, title, author, children, getProject,id} = props;  
 
+  const getSingleproject =()=>{
+    getProject(id);
+  } // pass thet get singleproject funstion in onclick
 
 
   return(
@@ -79,7 +79,7 @@ const Project = (props)=>{
         </div>
       
       <h2>{title}</h2>
-      <button onClick={displayValue}> Click me  </button>
+      <button onClick={getSingleproject}> Click me  </button>
       <h2>{author}</h2>
       {children}
       </div>
@@ -87,41 +87,25 @@ const Project = (props)=>{
 
     
   )
-}
+};
 
-const EventExamples =()=>{
-
-  // const handleFormInput =()=>{
-  //   console.log('handle form input');
-  // };
-
-  // const handleButtonClick = ()=>{
-  //   alert('handle button click');
-  // };
-
-  return(
-    <section>
-      <form>
-        <h2> FeedBack Form</h2>
-        <input 
-          type='text'
-          name ='example'
-          onChange={(e)=>console.log(e.target.value)}
-          style={{margin :'1rem 0'}}
-        />
-      </form>
-      <button style = {{ padding: '10px 20px',  color:'green' }} onClick={()=> console.log('click me')}>Click me </button>
-    </section>
-  )
-}
 
 export default App;
 
 /*
-remove button 
---> Prop Drilling
-- react data flow = can only pass props down
-- aternatives context api, redux, other state libraries
+
+--> More complex example
+- create getProject function in projectlist.
+- accept id as argument and finds the project
+- pass the function down to project component and invoke on button click
+- in th ptoject component destructure id and function
+- invoke the function when use clicks the button, pass the id
+-  the goal : you should see the same project in the console
+
+Note : we don't know how to use the state and hooks yet
+
+solution : getproject function , pass it as props and then in child as onclick button : stil not calling like ( getprojects(2)--> get in console) but not in onClick(getBooks(id))
+solution --> setup wrapper : in child write function getSingleproject
 
 
 */
