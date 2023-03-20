@@ -43,15 +43,16 @@ function App() {
 // Render items on screen 
 // In React we can't render objects directly in jsx --> solution : map data 
 const ProjectList = ()=>{
+  const someVlaue = 'Hello Buddy in console meet me !'
+  const displayValue =()=>{
+    console.log(someVlaue);
+  }
+  // pass displayValue as project props : Note --> we can only pass props down means parents to children
   return <section className='projectlist'>
     {projects.map((project)=>{
-
-      //console.log(project); // I know in that project all my properties lies
-      //const {img, title, author,id} = project // i want to pass my entire objects to reduce burden
-
       return(
-        
-        <Project {...project} key={project.id}/> // passing object using spread operaters
+      
+        <Project {...project} key={project.id} displayValue={displayValue}/> // passing object using spread operaters
       )
     })}
     <EventExamples/>
@@ -66,11 +67,9 @@ const ProjectList = ()=>{
 
 const Project = (props)=>{
   // to pull the properties i need to do props.project
-  const {img, title, author, children} = props;  // by using spread operater .. there is  no any book so remove it
+  const {img, title, author, children, displayValue} = props;  // by using spread operater .. there is  no any book so remove it
 
-  const displayTitle = ()=>{
-    console.log(title);
-  } //--> to show this event in our card : show title when click on button
+
 
   return(
     <article className='project'>
@@ -80,7 +79,7 @@ const Project = (props)=>{
         </div>
       
       <h2>{title}</h2>
-      <button onClick={displayTitle}> Display title </button>
+      <button onClick={displayValue}> Click me  </button>
       <h2>{author}</h2>
       {children}
       </div>
@@ -119,9 +118,10 @@ const EventExamples =()=>{
 export default App;
 
 /*
---> Events 
-do something like buttuon : onClick, onSubmit, onChange
-- in event example we are goig to setup form example
+remove button 
+--> Prop Drilling
+- react data flow = can only pass props down
+- aternatives context api, redux, other state libraries
 
 
 */
