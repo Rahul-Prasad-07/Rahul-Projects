@@ -1,7 +1,7 @@
 
 import './App.css';
 import React from 'react';
-import  ReactDOM  from 'react-dom/client';
+
 import {projectsitems} from './component/projects';
 import {Project} from './component/Project';
 
@@ -18,13 +18,11 @@ function App() {
 // Render items on screen 
 // In React we can't render objects directly in jsx --> solution : map data 
 const ProjectList = ()=>{
-  
-
   return <section className='projectlist'>
-    {projectsitems.map((project)=>{
+    {projectsitems.map((project,index)=>{
       return(
       
-        <Project {...project} key={project.id}/>
+        <Project {...project} key={project.id} number ={index}/>
       )
     })}
 
@@ -35,12 +33,15 @@ export default App;
 
 /*
 
---> ES6 Modules 
-- spilts your codes and functionalities as components
- - two flavors 
-    1. name exports : exporting with same name otherwise it don't work
-    2. default exports : exporting with any name and
-- projects in other file (objects)
+--> Local images(src folder)
+
+- better perfomance bcz optimized
+- no need to worry about broken links
+- add one more book to array
+- download all images and add to src folder
+- import all images
+- set image property equal to import
+- and yes each image requires new import
 
 
 */

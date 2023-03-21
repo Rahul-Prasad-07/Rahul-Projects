@@ -1,4 +1,10 @@
 
+// import img1 from '../images/image-1.jpg';
+// import img2 from '../images/image-2.jpg';
+// import img3 from '../images/image-3.jpg';
+// import img4 from '../images/image-4.jpg';
+
+
 export const projectsitems= [
 
     {
