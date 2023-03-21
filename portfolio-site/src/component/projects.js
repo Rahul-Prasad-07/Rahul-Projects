@@ -36,7 +36,21 @@ export const projectsitems= [
         img : 'https://cdn.hashnode.com/res/hashnode/image/upload/v1669634129401/lF5OaG2Nz.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp',
         id:4,
       
-      },
+    },
+    {
+      title :'My First KubeCon + CloudNativeCon North America 2022 Experience',
+      author : 'Rahul Prasad',
+      img : 'https://cdn.hashnode.com/res/hashnode/image/upload/v1669296810967/Xn_dxF2N56.jpg?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp',
+      id:5,
+    
+    },
+    {
+      title :'How to learn Web3 Development (2023)',
+      author : 'Rahul Prasad',
+      img : 'https://cdn.hashnode.com/res/hashnode/image/upload/v1662098303791/YrA2QbxtQ.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp',
+      id:5,
+    
+    },
     
   
   
