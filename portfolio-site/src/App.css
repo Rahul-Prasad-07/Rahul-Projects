@@ -36,6 +36,7 @@ body{
   padding: 2rem;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
   
   
 }
@@ -76,7 +77,7 @@ body{
 .read-me-btn {
   background-color: #4CAF50; /* Green background */
   border: none; /* No border */
-  color: rgb(103, 9, 9); /* White text */
+  color: white; /* White text */
   padding: 10px 20px; /* Some padding */
   text-align: center; /* Center text */
   text-decoration: none; /* No underline */
@@ -90,6 +91,20 @@ body{
 
 .read-me-btn:hover {
   background-color: #3e8e41; /* Darker green on hover */
+}
+
+.number {
+   position: absolute; 
+  top:0;
+  left:0;
+  font-size: 1rem;
+  padding: 0.75rem;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius:1rem;
+  background: #c35600;
+  color: #fff;
+
+  
 }
 
 
@@ -147,6 +162,7 @@ body{
     grid-gap: 20px;
   }
 }
+
 
 
 
