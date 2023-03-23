@@ -322,6 +322,70 @@ h3{
   line-height: 1.5;
 }
 .intro p{
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   color: white;
 }
+
+
+/* intro responsiveness*/
+
+
+@media screen and (max-width: 768px) {
+  .intro {
+    margin: 10vw;
+  }
+  
+  .intro img {
+    width: 30vw;
+    height: 30vw;
+    max-width: 200px;
+    max-height: 200px;
+  }
+  
+  .intro h2 {
+    font-size: 4vw;
+  }
+  
+  .intro h3 {
+    font-size: 3vw;
+  }
+  
+  .intro h4 {
+    font-size: 2vw;
+  }
+  
+  .intro p{
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .intro {
+    margin: 15vw;
+  }
+  
+  .intro img {
+    width: 50vw;
+    height: 50vw;
+    max-width: 150px;
+    max-height: 150px;
+  }
+  
+  .intro h2 {
+    font-size: 6vw;
+  }
+  
+  .intro h3 {
+    font-size: 4vw;
+  }
+  
+  .intro h4 {
+    font-size: 3vw;
+  }
+  
+  .intro p{
+    font-size: 4vw;
+  }
+}
+/* boxes*/
+

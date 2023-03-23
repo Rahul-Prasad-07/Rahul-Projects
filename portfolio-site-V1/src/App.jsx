@@ -6,6 +6,7 @@ import {ProjectList} from './component/ProjectList';
 import {remove} from './component/remove';
 import {FetchData} from './component/FetchDataUsers';
 import { MultipleFetchDataUser } from './component/MultipleFetchDataUser';
+import {Intro} from './component/Intro';
 
 import './App.css'
 
@@ -15,12 +16,13 @@ function App() {
   return (
     <div className="App">
       
-     <MultipleFetchDataUser/>
+     <Intro/>
+     {/* <MultipleFetchDataUser/> */}
      <ProjectList/>
      {/* <FetchData/> */}
      
       
-      <h3 >
+      <h3 style={{marginBottom:200}}>
         Welcome into Rahul's world
       </h3>
     </div>
