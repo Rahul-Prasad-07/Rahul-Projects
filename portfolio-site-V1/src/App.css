@@ -251,7 +251,7 @@ p{
 
 @media screen and (min-width:768px) {
   .users{
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     align-items: start;
   }
   
@@ -271,6 +271,33 @@ h3{
     text-transform: capitalize;
     font-size: 40px;
   
+}
+
+/* introduction*/
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.intro img {
+  margin-bottom: 20px;
+}
+
+.intro h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.intro h4 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin-bottom: 0;
 }
 
 
