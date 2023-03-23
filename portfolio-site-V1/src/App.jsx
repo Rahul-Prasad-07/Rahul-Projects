@@ -3,6 +3,9 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 
 import {ProjectList} from './component/ProjectList';
+import {remove} from './component/remove';
+import {FetchData} from './component/FetchData';
+
 import './App.css'
 
 function App() {
@@ -10,8 +13,10 @@ function App() {
 
   return (
     <div className="App">
-
+      
      <ProjectList/>
+     <FetchData/>
+     
       
       <p className="read-the-docs">
         Hello Welcome into Rahul's world

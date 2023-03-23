@@ -1,30 +1,48 @@
 import React, { useState } from 'react'
-// import {projects} from './projects';
+import '../App.css'
+import { projects } from './projects';
 
-//  const remove = () => {
 
-//     const [projects, setprojects] = useState()
+ export const remove = () => {
 
-//     const removeItem = () =>{};
-//     const clearAllItems = () =>{};
-//   return (
-//     <div>
+    //const [projects, setprojects] = useState()
 
-//         <p> Heloo from remove function</p>
-//         {/* projects.map((person) => {
-//             const {id, title, author, img} = person;
+   // const removeItem = () =>{};
+   // const clearAllItems = () =>{};
 
-//             return(
+  return (
+    <>
+        <h1> Rahul's Blogs </h1>
+  
+        <section className='projectlist'>
+          {projects.map((project,index)=>{
+            return(
+        
+              <Project {...project} key={project.id} number ={index}/>
+            )
+          })}
+  
+        </section>
+      </>
+  )
+}
 
-//             )
-//         }) */}
-//     </div>
-//   )
-// }
+ const Project = (props)=>{
+    // to pull the properties i need to do props.project
+    const {img, title, author ,number} = props;  
+  
+    return(
+      <article className='project'>
+       <img className="img" src={img}  alt={title}/>
+        <h2>{title}</h2>
+        <h2>{author}</h2>
+        <span className="number"> {`# ${number + 1 }`} </span>
+      </article>
+  
+      
+    );
+  };
 
   
-  
-  // Project is the child component
-  // All our logig is here :--> structure of element what we want to return at website
   
    
