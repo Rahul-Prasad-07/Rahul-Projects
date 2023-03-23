@@ -38,9 +38,15 @@ export const MultipleFetchDataUser = () => {
 
   return (
     <div className='intro'>
-        <img style={{width:'200px', borderRadius:'25px'}} src={user.avatar_url} alt={user.name} />
-        <h2>{user.name}</h2>
-        <h4>{user.bio}</h4>
+        <img  src={user.avatar_url} alt={user.name} />
+        <h2>Hi 👋, I'm {user.name}</h2>
+        <h3>A passionate Software developer from India</h3>
+        <p>I am a collaborative Blockchain and DevOps developer.
+            I am specialize in Blockchain technology. 
+            Good in Java, JavaScript and Solidity to build smart contracts, consensus algorithms, and data structures. 
+            
+            Seeking to become a Web3 Developer and reveal the unlimited potential of blockchain with your reputed organization.</p>
+    
     </div>
   )
 }

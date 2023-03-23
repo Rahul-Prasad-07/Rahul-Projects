@@ -275,42 +275,53 @@ h3{
 
 /* introduction*/
 .intro {
+  margin-top: 100px;
+  margin-left: 70px;
+  margin-right:70px;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  background-color: #f2f2f2;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 40px;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background-color: #f4f4f4;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* background: #ececec; */
+  /* background: linear-gradient(to bottom right, #8a2387, #e94057, #f27121); */
+  /* background: linear-gradient(to bottom, #8E2DE2, #4A00E0); */
+  background: linear-gradient(to right, #343132, #3F5EFB);
+  /* background: linear-gradient(to bottom right, #00c8ef, #e605b2); */
+  /* background: linear-gradient(to bottom left, #33ccff 0%, #ff99cc 100%); */
+  /* background: radial-gradient(circle, #FDB813, #8B4C9B); */
+
+  /* background: linear-gradient(to bottom, #2980B9, #6DD5FA, #FFFFFF); */
+  
 }
 
 .intro img {
-  margin-bottom: 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
 }
 
 .intro h2 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #f9f4f4;
+}
+
+.intro h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: white;
 }
 
 .intro h4 {
   font-size: 1.2rem;
-  font-weight: normal;
-  margin-bottom: 0;
+  line-height: 1.5;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.intro p{
+  font-size: 1.6rem;
+  color: white;
+}
