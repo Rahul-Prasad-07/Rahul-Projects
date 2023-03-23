@@ -37,6 +37,7 @@ body{
   margin: 5rem auto;
   display: grid;
   gap: 2rem;
+  margin-left: auto;
   
 }
 
@@ -125,7 +126,7 @@ body{
   
 }
 
-h1{
+h1 {
   text-align: center;
   margin-top: 4rem;
   text-transform: capitalize;
@@ -225,6 +226,54 @@ h1 {
   font-weight: bold;
   margin-bottom: 30px;
 }
+
+/* USer Component*/
+p{
+  text-align: center;
+}
+
+.users{
+  /* max-width: 90vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  gap: 2rem;
+  margin: 3rem auto; */
+
+  width: 90vw;
+  max-width: 1170px;
+  justify-content: center;
+  margin: 5rem auto;
+  display: grid;
+  gap: 2rem;
+  margin-left: auto;
+
+}
+
+@media screen and (min-width:768px) {
+  .users{
+    grid-template-columns: repeat(3,1fr);
+    align-items: start;
+  }
+  
+}
+.user li {
+  width: 100%;
+  display: flex;
+  align-items:center;
+  background: var(--white);
+  padding:1rem 2rem;
+}
+
+h3{
+  
+    text-align: center;
+    margin-top: 4rem;
+    text-transform: capitalize;
+    font-size: 40px;
+  
+}
+
+
 
 
 
