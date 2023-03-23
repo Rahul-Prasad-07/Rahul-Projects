@@ -4,7 +4,8 @@ import viteLogo from '/vite.svg'
 
 import {ProjectList} from './component/ProjectList';
 import {remove} from './component/remove';
-import {FetchData} from './component/FetchData';
+import {FetchData} from './component/FetchDataUsers';
+import { MultipleFetchDataUser } from './component/MultipleFetchDataUser';
 
 import './App.css'
 
@@ -14,13 +15,14 @@ function App() {
   return (
     <div className="App">
       
+     <MultipleFetchDataUser/>
      <ProjectList/>
-     <FetchData/>
+     {/* <FetchData/> */}
      
       
-      <p className="read-the-docs">
-        Hello Welcome into Rahul's world
-      </p>
+      <h3 >
+        Welcome into Rahul's world
+      </h3>
     </div>
   )
 }
