@@ -17,7 +17,7 @@ export const OpenSource = () => {
     }, []);
 
     return (
-       <div> <p>This is my Open Source page</p></div>
+       <div className='opensource'> <p>This is my Open Source page</p></div>
       );
 
 }

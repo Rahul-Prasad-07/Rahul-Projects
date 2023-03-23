@@ -4,8 +4,8 @@ import React from 'react';
 
 import {projectsitems} from './component/projects';
 import {Project} from './component/Project';
-import {OpenSource} from './component/OpenSource';
-import {RepositoryDetails} from './component/RepositoryDetails';
+// import {OpenSource} from './component/OpenSource';
+// import {RepositoryDetails} from './component/RepositoryDetails';
 
 
 // App is the parent component
