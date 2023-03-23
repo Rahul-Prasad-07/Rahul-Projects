@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+
+import {ProjectList} from './component/ProjectList';
 import './App.css'
 
 function App() {
@@ -8,6 +10,8 @@ function App() {
 
   return (
     <div className="App">
+
+     <ProjectList/>
       
       <p className="read-the-docs">
         Hello Welcome into Rahul's world
@@ -15,6 +19,8 @@ function App() {
     </div>
   )
 }
+
+
 
 export default App
 

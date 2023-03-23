@@ -1,42 +1,240 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+
+body{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: #ececec;
+  /* background: linear-gradient(to bottom right, #8a2387, #e94057, #f27121); */
+  /* background: linear-gradient(to bottom, #8E2DE2, #4A00E0); */
+  /* background: linear-gradient(to right, #FC466B, #3F5EFB); */
+  /* background: linear-gradient(to bottom right, #00c8ef, #e605b2); */
+  /* background: linear-gradient(to bottom left, #33ccff 0%, #ff99cc 100%); */
+  /* background: radial-gradient(circle, #FDB813, #8B4C9B); */
+
+  /* background: linear-gradient(to bottom, #2980B9, #6DD5FA, #FFFFFF); */
+
+
+  
+  
+
+
+
+
+
+
+  color: #222;
+}
+
+.projectlist{
+  width: 90vw;
+  max-width: 1170px;
+  justify-content: center;
+  margin: 5rem auto;
+  display: grid;
+  gap: 2rem;
+  
+}
+
+@media screen and (min-width:768px) {
+  .projectlist{
+    grid-template-columns: repeat(2,1fr);
+    align-items: start;
+  }
+  
+}
+
+.project{
+  background: #fff;
+  border-radius: 1rem;
   padding: 2rem;
   text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  
+  
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.project:hover {
+  transform: translateY(-5px);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.project img{
+  width: 100%;
+  object-fit: cover;
+ 
+}
+
+
+.project h4{
+  color: #617d98;
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+  letter-spacing: 2px;
+  
+}
+
+.project p {
+  margin: 1rem 0 0.5rem;
+
+}
+
+
+
+
+.project h2{
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.read-me-btn {
+  background-color: #4CAF50; /* Green background */
+  border: none; /* No border */
+  color: white; /* White text */
+  padding: 10px 20px; /* Some padding */
+  text-align: center; /* Center text */
+  text-decoration: none; /* No underline */
+  display: inline-block; /* Display as inline block */
+  font-size: 16px; /* Font size */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Change mouse cursor on hover */
+  transition-duration: 0.4s; /* Add a transition effect */
+  margin-top: 20px; /* Add 20 pixels of margin on top */
+}
+
+.read-me-btn:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+}
+
+.number {
+   position: absolute; 
+  top:0;
+  left:0;
+  font-size: 1rem;
+  padding: 0.75rem;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius:1rem;
+  background: #c35600;
+  color: #fff;
+
+  
+}
+
+h1{
+  text-align: center;
+  margin-top: 4rem;
+  text-transform: capitalize;
+}
+
+
+/* Responsive styles for App.js */
+
+/* For screens smaller than 768px 
+@media (max-width: 767px) {
+  .projectlist {
+    display: flex;
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .project {
+    width: 100%;
+  }
+}
+*/
+
+/* For screens between 768px and 1024px 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .projectlist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .project {
+    width: calc(50% - 20px);
+    margin: 20px;
+  }
+}
+*/
+
+/* For screens larger than 1024px 
+@media (min-width: 1025px) {
+  .projectlist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .project {
+    width: calc(33.33% - 20px);
+    margin: 20px;
+  }
+}
+*/
+
+
+/* for my pc screen  */
+@media only screen and (min-width: 1240px) and (max-height: 820px) {
+  .projectlist {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+
+/* OpenSource Component*/
+
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-.card {
-  padding: 2em;
+li {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
 }
 
-.read-the-docs {
-  color: #888;
+li a {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
 }
+
+li a:hover {
+  color: #007bff;
+}
+
+li p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
