@@ -14,6 +14,8 @@ function App() {
 
       
       <NavbarV2/>
+      <br/>
+      <br/>
      {/* <Navbar/> */}
      <MultipleFetchDataUser/>
      <BlogsList/>

@@ -11,14 +11,6 @@ body{
   /* background: linear-gradient(to bottom, #2980B9, #6DD5FA, #FFFFFF); */
 
 
-  
-  
-
-
-
-
-
-
   color: #222;
 }
 
@@ -32,12 +24,15 @@ body{
   margin-left: auto;
   color: black;
   
+  
+  
 }
 
 @media screen and (min-width:768px) {
   .projectlist{
     grid-template-columns: repeat(2,1fr);
     align-items: start;
+    
   }
   
 }
@@ -49,6 +44,7 @@ body{
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
+  
   
   
 }
@@ -190,17 +186,12 @@ ul {
   padding: 0;
 }
 
-li {
-  margin-bottom: 20px;
-  border: 1px solid #ddd;
-  padding: 20px;
-  border-radius: 5px;
-}
+
 
 li a {
   font-size: 20px;
   font-weight: bold;
-  color: #333;
+  color: #000000;
   text-decoration: none;
   transition: color 0.2s ease-in-out;
 }
