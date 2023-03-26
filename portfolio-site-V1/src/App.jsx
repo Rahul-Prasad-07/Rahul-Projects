@@ -1,24 +1,22 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-
-import {ProjectList} from './component/ProjectList';
-import {remove} from './component/remove';
-import {FetchData} from './component/FetchDataUsers';
+import {BlogsList} from './component/Blogs/BlogsList';
+import {FetchData} from './component/GitHubApi/FetchDataUsers';
 import { MultipleFetchDataUser } from './component/MultipleFetchDataUser';
-import {Intro} from './component/Intro';
-
+//import {Navbar} from './component/Navbar/Navbar'
 import './App.css'
+import { NavbarV2 } from './component/NavbarV2/NavbarV2';
 
 function App() {
   
 
   return (
     <div className="App">
+
       
-     <Intro/>
-     {/* <MultipleFetchDataUser/> */}
-     <ProjectList/>
+      <NavbarV2/>
+     {/* <Navbar/> */}
+     <MultipleFetchDataUser/>
+     <BlogsList/>
      {/* <FetchData/> */}
      
       

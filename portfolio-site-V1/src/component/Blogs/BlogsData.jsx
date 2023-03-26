@@ -5,7 +5,7 @@
 // import img4 from '../images/image-4.jpg';
 
 
-export const projects= [
+export const BlogsData= [
 
     {
       title :'Diving into Docker : A Beginners first project',
