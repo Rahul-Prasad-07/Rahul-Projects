@@ -1,4 +1,6 @@
- export const Project = (props)=>{
+ import React from 'react';
+ import './Blog.scss';
+ export const Blog = (props)=>{
     // to pull the properties i need to do props.project
     const {img, title, author ,number} = props;  
   

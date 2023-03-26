@@ -1,19 +1,21 @@
 // Render items on screen 
 // In React we can't render objects directly in jsx --> solution : map data 
 
-import {projects} from './projects';
-import {Project} from './Project';
-export const ProjectList = ()=>{
+import {BlogsData} from './BlogsData';
+import {Blog} from './Blog';
+import './Blog.scss';
+
+export const BlogsList = ()=>{
     return (
   
       <>
         <h1> Rahul's Blogs </h1>
   
         <section className='projectlist'>
-          {projects.map((project,index)=>{
+          {BlogsData.map((blog,index)=>{
             return(
         
-              <Project {...project} key={project.id} number ={index}/>
+              <Blog{...blog} key={blog.id} number ={index}/>
             )
           })}
   
