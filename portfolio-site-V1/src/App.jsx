@@ -1,10 +1,11 @@
 import { useState } from 'react'
 import {BlogsList} from './component/Blogs/BlogsList';
 import {FetchData} from './component/GitHubApi/FetchDataUsers';
-import { MultipleFetchDataUser } from './component/MultipleFetchDataUser';
+import { MultipleFetchDataUser } from './component/Home/MultipleFetchDataUser';
 //import {Navbar} from './component/Navbar/Navbar'
-import './App.css'
+import './App.scss'
 import { NavbarV2 } from './component/NavbarV2/NavbarV2';
+import { About } from './component/About/About';
 
 function App() {
   
@@ -16,8 +17,8 @@ function App() {
       <NavbarV2/>
       <br/>
       <br/>
-     {/* <Navbar/> */}
      <MultipleFetchDataUser/>
+     <About/>
      <BlogsList/>
      {/* <FetchData/> */}
      

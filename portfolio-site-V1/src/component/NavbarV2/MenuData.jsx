@@ -28,7 +28,7 @@ export const MenuData = [
     {
         title:'❤️ Sponsor',
         url:'#',
-        CName:'nav-links',
+        CName:'nav-links-mobile',
     },
     
 

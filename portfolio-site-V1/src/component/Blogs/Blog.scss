@@ -37,6 +37,8 @@ body{
   
 }
 
+
+
 .project{
   background: #fff;
   border-radius: 1rem;
@@ -347,7 +349,9 @@ h3{
 
 @media screen and (max-width: 480px) {
   .intro {
-    margin: 15vw;
+    margin: 11vw;
+    margin-top: 120px;
+    
   }
   
   .intro img {
@@ -372,6 +376,26 @@ h3{
   .intro p{
     font-size: 4vw;
   }
+}
+
+ .tag-cmp {
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+ .tag-cmp {
+  padding: 1rem 2rem;
+  background: var(--white-color);
+  border-radius: 15px;
+  flex-direction: row;
+  width: auto;
+  box-shadow: 0 0 20px #0000001a;
+}
+
+.app__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* boxes*/
 
