@@ -23,12 +23,216 @@
     color: #313bac;
 }
 
+.about__about {
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+}
+
+.about__profiles {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+  align-items: center;
+}
+
+.abtdesc {
+  font-size: 0.8rem;
+  text-align: left;
+  color: var(--gray-color);
+  line-height: 1.5;
+
+  @media screen and (min-width: 2000px) {
+    font-size: 1.75rem;
+  }
+}
+
+.abthead {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--black-color);
+  text-align: center;
+
+  @media screen and (min-width: 2000px) {
+    font-size: 2rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 1.2rem;
+  }
+}
+
+.about__profile-item {
+  background: #ffffff;
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 340px;
+  /*  height: 250px; */
+  max-width: 400px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  transition: all 0.3s ease-in-out;
+  user-select: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.2rem;
+
+
+  h2 {
+    text-align: center;
+    margin: auto;
+
+  }
+
+  p {
+
+    font-size: 1rem;
+    text-align: justify;
+
+  }
+
+  .abtlogo {
+    width: 100%;
+    height:100%;
+    margin: auto;
+  }
+
+  hr {
+    background-color: #313bac;
+    height: 5px;
+    width: 30%;
+    border-radius: 10px;
+    margin: 0px auto;
+    margin-top: 5px;
+  }
+
+  @media screen and (min-width: 2000px) {
+    width: 370px;
+    margin: 2rem 4rem;
+
+    img {
+      height: 320px;
+    }
+  }
+}
+
+.about_cardsdiv {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  margin-bottom: 20px;
+
+}
+
+.about__profile-item:hover {
+  transform: translateY(-3px);
+  -webkit-box-shadow: 0px 0px 51px 0px rgba(49, 59, 172, 0.6);
+  -moz-box-shadow: 0px 0px 51px 0px rgba(49, 59, 172, 0.6);
+  box-shadow: 0px 0px 51px 0px rgba(49, 59, 172, 0.6);
+}
+
+
+.about_card {
+  background: #313bac1a;
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 400px;
+  height: 250px;
+  max-width: 400px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  transition: all 0.3s ease-in-out;
+
+
+  img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    object-fit: cover;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+
+  }
+
+
+
+}
+
+.about_card:hover {
+  transform: translateY(-5px);
+  -webkit-box-shadow: 0px 0px 51px 0px rgba(49, 59, 172, 0.6);
+  -moz-box-shadow: 0px 0px 51px 0px rgba(49, 59, 172, 0.6);
+  box-shadow: 0px 0px 51px 0px rgba(49, 59, 172, 0.6);
+}
+
+
+@media screen and (max-width: 450px) {
+  .about_card {
+    width: 70vw;
+    height: 200px;
+    max-width: 70vw;
+    padding: 20px;
+
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
+}
+
 @media screen and (max-width: 450px){
 
     .head-textt {
-        font-size: 1.5rem;
-    }
+        font-size: 2rem;
+        font-weight: 800;
+        text-align: center;
+        color: #030303;
+        // text-transform: capitalize;
+        margin-top: 4rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 10px;
+        padding-right: 10px;
     
+      .h3{
+        display: block;
+        font-size: 1.5em;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+    } 
+      
+    }
+      
+    .head-textt span {
+        color: #313bac;
+        
+    
+    
+    }
 
 
 }

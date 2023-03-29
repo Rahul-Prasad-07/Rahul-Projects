@@ -30,7 +30,7 @@ body{
 
 @media screen and (min-width:768px) {
   .projectlist{
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
     align-items: start;
     
   }
