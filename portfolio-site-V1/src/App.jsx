@@ -6,6 +6,7 @@ import { MultipleFetchDataUser } from './component/Home/MultipleFetchDataUser';
 import './App.scss'
 import { NavbarV2 } from './component/NavbarV2/NavbarV2';
 import { About } from './component/About/About';
+import {Projects} from './component/Projects/Projects'
 
 function App() {
   
@@ -19,6 +20,7 @@ function App() {
       <br/>
      <MultipleFetchDataUser/>
      <About/>
+     <Projects/>
      <BlogsList/>
      {/* <FetchData/> */}
      

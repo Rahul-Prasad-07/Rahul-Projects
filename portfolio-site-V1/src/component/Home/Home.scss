@@ -38,7 +38,9 @@
     /* background: #ececec; */
     /* background: linear-gradient(to bottom right, #8a2387, #e94057, #f27121); */
     /* background: linear-gradient(to bottom, #8E2DE2, #4A00E0); */
-    background: linear-gradient(to right, #343132, #3F5EFB);
+    //background: linear-gradient(to right, #343132, #3F5EFB);
+    background: url('https://free4kwallpapers.com/uploads/originals/2022/04/20/rubiks-cube-digital-art-wallpaper.jpg');
+    
     /* background: linear-gradient(to bottom right, #00c8ef, #e605b2); */
     /* background: linear-gradient(to bottom left, #33ccff 0%, #ff99cc 100%); */
     /* background: radial-gradient(circle, #FDB813, #8B4C9B); */
@@ -160,7 +162,9 @@
 
 .ProfBoxes{
     flex-direction: row;
-    margin-left:10px;
+    // margin-left:auto;
+    // margin-right: auto;
+    display: flex;
 
 }
 
@@ -173,7 +177,7 @@ div .ProfBoxes{
     font-size: larger;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 780x) {
     /* CSS code for screens with maximum width of 768px */
     .tag-cmp {
         margin-top: 3rem;
@@ -187,13 +191,13 @@ div .ProfBoxes{
     }
     
     .ProfBoxes {
-        display: flex;
+        // display: flex;
         margin-left: 0;
-        flex-direction: row;
+        // flex-direction: row;
         margin-top: 2rem;
         margin-left: 1rem;
         margin-right: 1.2rem;
-    //     flex-direction: column;
+         flex-direction: column;
     }
     
     p .prof1 {
@@ -228,6 +232,60 @@ div .ProfBoxes{
         line-height: 1.2;
       }
   }
+
+  @media only screen and (max-width: 650px) {
+    /* CSS code for screens with maximum width of 450px */
+    .ProfBoxes {
+       display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      
+    }
+
+  
+    .tag-cmp {
+    
+      margin-top: 1rem;
+      margin-left: auto;
+      margin-right: auto;
+      align-items: center;
+    }
+  
+    .ProfBoxes .tag-cmp p {
+      font-size: 1rem;
+    }
+
+    .tag-cmp p {
+        font-size: 1rem;
+        line-height: 1.2;
+      }
+  }
+
+  @media only screen and (max-width: 1018px) {
+    /* CSS code for screens with maximum width of 768px */
+    .tag-cmp {
+        margin-top: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        align-items: center;
+    }
+    
+    .tag-cmp p {
+        font-size: 1rem;
+    }
+    
+    .ProfBoxes {
+      flex-direction: column;
+      margin-left:auto;
+      margin-right: auto;
+      display: flex;
+    }
+    
+    p .prof1 {
+        font-size: medium;
+    }
+}
   
   
 
