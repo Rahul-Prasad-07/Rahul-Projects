@@ -49,3 +49,5 @@ export const Projects = () => {
     </>
   )
 }
+
+// projects folder
