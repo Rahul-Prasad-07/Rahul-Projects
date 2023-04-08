@@ -1,16 +1,10 @@
-const workdata =[
+const ProjectData =[
 
     {
         codeLink: "https://github.com/IAmTamal/ShopCoders",
         description:
           "An Open source e-commerce application on the way to help all the devs out there get affordable yet authentic swags.",
-        imgUrl: {
-          _type: "image",
-          asset: {
-            _ref: "image-7681f6a3a9d4919f406110ab5a213723c77ccfbc-6912x3456-png",
-            _type: "reference",
-          },
-        },
+        imgUrl: 'https://cdn.hashnode.com/res/hashnode/image/upload/v1677321844020/9fc45144-4ab7-4389-bb3a-f1ce63ca2cae.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp',
         projectLink: "https://shop-coders.vercel.app/",
         tags: ["ecommerce", "Next JS", "Web App"],
         title: "ShopCoders",  
