@@ -1,23 +1,23 @@
 
 .head-textt {
-    font-size: 2rem;
+    font-size: 26px;
     font-weight: 800;
     text-align: center;
     color: #030303;
     text-transform: capitalize;
-    padding: 1rem;
-
-  .h3{
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-} 
-  
+    padding: 25px 0 65px 0;
 }
+
+.h3{
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+} 
+
   
 .head-textt span {
     color: #313bac;
@@ -32,10 +32,10 @@
 .about__profiles {
   display: flex;
   justify-content: center;
-  gap: 3rem;
+  gap: 1rem;
   align-items: flex-start;
   flex-wrap: wrap;
-  margin-top: 4rem;
+  // margin-top: 4rem;
   align-items: center;
 }
 
@@ -83,7 +83,7 @@
   user-select: none;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1.2rem;
+  // margin-top: 1.2rem;
 
 
   h2 {
@@ -215,12 +215,12 @@
 @media screen and (max-width: 450px){
 
     .head-textt {
-        font-size: 2rem;
+        font-size: 20px;
         font-weight: 800;
         text-align: center;
         color: #030303;
         // text-transform: capitalize;
-        margin-top: 4rem;
+        // margin-top: 4rem;
         margin-left: auto;
         margin-right: auto;
         padding-left: 10px;
@@ -251,8 +251,42 @@
 .container {
   max-width: 100%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 40px 0;
  
 }
+
+
+
+@media screen and (max-width: 1238px){ 
+  .about__profile-item{
+    width: 30%;
+  } 
+
+
+}
+
+
+@media screen and (max-width: 810px){ 
+  .about__profile-item{
+    width: 40%;
+  } 
+
+
+}
+@media screen and (max-width: 574px){ 
+  .about__profile-item{
+    width: 45%;
+  } 
+
+
+}
+@media screen and (max-width: 500px){ 
+  .about__profile-item{
+    width: 75%;
+  } 
+
+
+}
+
 
 
