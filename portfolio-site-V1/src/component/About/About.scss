@@ -154,7 +154,7 @@
   max-width: 400px;
   padding: 25px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   text-align: justify;
   transition: all 0.3s ease-in-out;
@@ -188,9 +188,9 @@
 }
 
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
   .about_card {
-    width: 70vw;
+    width: 100%;
     height: 200px;
     max-width: 70vw;
     padding: 20px;
@@ -199,6 +199,17 @@
       font-size: 1.2rem;
     }
   }
+  // .ProfBoxes{
+  //   flex-direction: row;
+  //  flex-wrap: inherit;  
+  // }
+  // .tag-cmp {
+  //   // align-items: center;
+  //   // width: 33.33%;
+  //   // margin: 25px 10px 10px 10px;
+  //   // padding: 10px 10px;
+  //   align-items: center;
+  // }
 }
 
 @media screen and (max-width: 450px){

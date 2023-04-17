@@ -265,10 +265,9 @@ div .ProfBoxes{
   @media only screen and (max-width: 1018px) {
     /* CSS code for screens with maximum width of 768px */
     .tag-cmp {
-        margin-top: 2rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
-        align-items: center;
+      margin: 20px 10px 20px 10px;
+      align-items: center;
+      padding: 10px;
     }
     
     .tag-cmp p {
@@ -276,7 +275,8 @@ div .ProfBoxes{
     }
     
     .ProfBoxes {
-      flex-direction: column;
+      flex-direction: row;
+      flex-wrap: inherit;
       margin-left:auto;
       margin-right: auto;
       display: flex;
@@ -286,6 +286,61 @@ div .ProfBoxes{
         font-size: medium;
     }
 }
+
+
+@media only screen and (max-width: 520px) {
+  /* CSS code for screens with maximum width of 768px */
+  .tag-cmp {
+    margin: 20px 10px 20px 10px;
+    align-items: center;
+    padding: 20pxpx;
+  }
+  
+  .ProfBoxes .tag-cmp p {
+    font-size: 11px;
+  }
+  
+  .ProfBoxes {
+    flex-direction: row;
+    flex-wrap: inherit;
+    margin-left:auto;
+    margin-right: auto;
+    display: flex;
+  }
+  
+  p .prof1 {
+      font-size: medium;
+  }
+}
+
+
+@media only screen and (max-width: 412px) {
+  /* CSS code for screens with maximum width of 768px */
+  .tag-cmp {
+    margin: 20px 10px 10px 0px;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .ProfBoxes.tag-cmp p {
+      font-size: 12px;
+  }
+  
+  .ProfBoxes {
+    flex-direction: row;
+    flex-wrap: inherit;
+    margin-left:auto;
+    margin-right: auto;
+    display: flex;
+  }
+  
+  p .prof1 {
+      font-size: medium;
+  }
+}
+
+
+
   
   
 

@@ -109,16 +109,15 @@
     .nav-links{
         display: block;
         widows: 100%;
-        padding: 2rem 0;
+        padding: .5rem 0;
         color: #222;
     }
 
     .nav-links:hover{
-        background:#fff;
+        background:linear-gradient(to right, #3257a1, #101011);
         backdrop-filter: blur(20px);
         border-radius: 4px;
-      
-
+        color: #fafafa;
     }
     .menu-icons{
         display:block
@@ -139,4 +138,8 @@
     }
     
     
+}
+
+.fas{
+    color: #fff;
 }
