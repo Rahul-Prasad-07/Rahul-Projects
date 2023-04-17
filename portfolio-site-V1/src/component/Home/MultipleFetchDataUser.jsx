@@ -56,7 +56,7 @@ export const MultipleFetchDataUser = () => {
 
   return (
     <div className='intro'>
-        <Container >
+        
         <div className='Home'>
         <img  src={avatar_url} alt={name} />
         <h2>Hi 👋, I'm {name}</h2>
@@ -74,7 +74,6 @@ export const MultipleFetchDataUser = () => {
             
         </div>
         </div>
-        </Container>
            
         
         {/* <p>I am specialize in Blockchain technology. Experties in Java, JavaScript and Solidity to build smart contracts, consensus algorithms, and data structures.</p>
