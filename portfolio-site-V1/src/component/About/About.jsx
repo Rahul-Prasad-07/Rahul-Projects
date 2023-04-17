@@ -7,6 +7,7 @@ export const About = () => {
 
   return (
     <>
+     <div className="container">
       <h2 className="head-textt">
         {" "}
         My goal is to learn and contribute more & more to build better world for
@@ -109,6 +110,7 @@ export const About = () => {
             user with React, HTML, CSS, and other latest technologies.
           </p>
         </div>
+      </div>
       </div>
     </>
   );

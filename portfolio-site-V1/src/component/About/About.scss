@@ -4,8 +4,8 @@
     font-weight: 800;
     text-align: center;
     color: #030303;
-    // text-transform: capitalize;
-    margin-top: 4rem;
+    text-transform: capitalize;
+    padding: 1rem;
 
   .h3{
     display: block;
@@ -71,7 +71,7 @@
   -webkit-backdrop-filter: blur(4.5px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  width: 340px;
+  width: 22%;
   /*  height: 250px; */
   max-width: 400px;
   padding: 25px;
@@ -246,6 +246,13 @@
     }
 
 
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+ 
 }
 
 
