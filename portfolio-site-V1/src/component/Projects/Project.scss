@@ -71,6 +71,8 @@
   justify-content: center;
   align-items: center;
   gap: 3rem;
+  margin-right: 1.2rem;
+  margin-left: 1.2rem;
 
   .app__work-item {
     width: 280px;
@@ -99,7 +101,12 @@
 
     @media screen and (max-width: 300px) {
       width: 100%;
-      margin: 1rem;
+      margin: 10px;
+
+      .project h2 {
+        // margin-top: 1rem;
+        font-size: 12px;
+    }
     }
   }
 
@@ -252,4 +259,13 @@
   padding: 0.5rem 1rem;
   border-radius: 5px;
   font-size: 0.9rem;
+}
+
+
+@media screen and (max-width: 680px) {
+
+  .project h2 {
+    // margin-top: 1rem;
+    font-size: 12px;
+}
 }

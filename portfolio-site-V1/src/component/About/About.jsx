@@ -7,6 +7,7 @@ export const About = () => {
 
   return (
     <>
+    
       <h2 className="head-textt">
         {" "}
         My goal is to learn and contribute more & more to build better world for

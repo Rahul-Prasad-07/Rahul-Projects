@@ -56,6 +56,8 @@ export const MultipleFetchDataUser = () => {
 
   return (
     <div className='intro'>
+        
+        <div className='Home'>
         <img  src={avatar_url} alt={name} />
         <h2>Hi 👋, I'm {name}</h2>
         <h3>A passionate and  collaborative Blockchain and DevOps developer from India </h3>
@@ -70,6 +72,7 @@ export const MultipleFetchDataUser = () => {
             <div className="tag-cmp "><p >Opensource Advocate</p> </div>
             <div className="tag-cmp "> <p >DevOps Enthusiastic</p></div>
             
+        </div>
         </div>
            
         
