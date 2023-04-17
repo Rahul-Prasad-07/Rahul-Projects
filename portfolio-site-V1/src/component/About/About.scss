@@ -1,27 +1,25 @@
 
-// this is new
 .head-textt {
-    font-size: 2rem;
-    font-weight: 800;
-    text-align: center;
-    color: #030303;
-    // text-transform: capitalize;
-    margin-top: 4rem;
-
-  .h3{
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-} 
-  
+  font-size: 26px;
+  font-weight: 800;
+  text-align: center;
+  color: #030303;
+  text-transform: capitalize;
+  padding: 25px 0 65px 0;
 }
-  
+
+.h3 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
 .head-textt span {
-    color: #313bac;
+  color: #313bac;
 }
 
 .about__about {
@@ -33,10 +31,10 @@
 .about__profiles {
   display: flex;
   justify-content: center;
-  gap: 3rem;
+  gap: 1rem;
   align-items: flex-start;
   flex-wrap: wrap;
-  margin-top: 4rem;
+  // margin-top: 4rem;
   align-items: center;
 }
 
@@ -72,7 +70,7 @@
   -webkit-backdrop-filter: blur(4.5px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  width: 340px;
+  width: 22%;
   /*  height: 250px; */
   max-width: 400px;
   padding: 25px;
@@ -84,25 +82,21 @@
   user-select: none;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1.2rem;
-
+  // margin-top: 1.2rem;
 
   h2 {
     text-align: center;
     margin: auto;
-
   }
 
   p {
-
     font-size: 1rem;
     text-align: justify;
-
   }
 
   .abtlogo {
     width: 100%;
-    height:100%;
+    height: 100%;
     margin: auto;
   }
 
@@ -133,7 +127,6 @@
   flex-wrap: wrap;
   gap: 2.5rem;
   margin-bottom: 20px;
-
 }
 
 .about__profile-item:hover {
@@ -142,7 +135,6 @@
   -moz-box-shadow: 0px 0px 51px 0px rgba(49, 59, 172, 0.6);
   box-shadow: 0px 0px 51px 0px rgba(49, 59, 172, 0.6);
 }
-
 
 .about_card {
   background: #313bac1a;
@@ -160,7 +152,6 @@
   text-align: justify;
   transition: all 0.3s ease-in-out;
 
-
   img {
     width: 100px;
     height: 100px;
@@ -174,11 +165,7 @@
     font-size: 1.5rem;
     font-weight: 600;
     text-align: center;
-
   }
-
-
-
 }
 
 .about_card:hover {
@@ -202,7 +189,7 @@
   }
   // .ProfBoxes{
   //   flex-direction: row;
-  //  flex-wrap: inherit;  
+
   // }
   // .tag-cmp {
   //   // align-items: center;
@@ -213,40 +200,59 @@
   // }
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 450px) {
+  .head-textt {
+    font-size: 17px;
+    font-weight: 800;
+    text-align: center;
+    color: #030303;
+    // text-transform: capitalize;
+    // margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
 
-    .head-textt {
-        font-size: 2rem;
-        font-weight: 800;
-        text-align: center;
-        color: #030303;
-        // text-transform: capitalize;
-        margin-top: 4rem;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 10px;
-        padding-right: 10px;
-    
-      .h3{
-        display: block;
-        font-size: 1.5em;
-        margin-block-start: 0.83em;
-        margin-block-end: 0.83em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-        font-weight: bold;
-    } 
-      
+    .h3 {
+      display: block;
+      font-size: 1.5em;
+      margin-block-start: 0.83em;
+      margin-block-end: 0.83em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-weight: bold;
     }
-      
-    .head-textt span {
-        color: #313bac;
-        
-    
-    
-    }
+  }
 
-
+  .head-textt span {
+    color: #313bac;
+  }
 }
 
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
 
+@media screen and (max-width: 1238px) {
+  .about__profile-item {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .about__profile-item {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 574px) {
+  .about__profile-item {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about__profile-item {
+    width: 75%;
+  }
+}

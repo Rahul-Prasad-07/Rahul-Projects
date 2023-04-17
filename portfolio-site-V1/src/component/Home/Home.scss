@@ -1,81 +1,200 @@
+.read-me-btn {
+  background-color: #4CAF50;
+  /* Green background */
+  border: none;
+  /* No border */
+  color: white;
+  /* White text */
+  padding: 10px 20px;
+  /* Some padding */
+  text-align: center;
+  /* Center text */
+  text-decoration: none;
+  /* No underline */
+  display: inline-block;
+  /* Display as inline block */
+  font-size: 16px;
+  /* Font size */
+  border-radius: 4px;
+  /* Rounded corners */
+  cursor: pointer;
+  /* Change mouse cursor on hover */
+  transition-duration: 0.4s;
+  /* Add a transition effect */
+  margin-top: 20px;
+  /* Add 20 pixels of margin on top */
+}
+
+.read-me-btn:hover {
+  background-color: #3e8e41;
+  /* Darker green on hover */
+}
 
 
-  .read-me-btn {
-    background-color: #4CAF50; /* Green background */
-    border: none; /* No border */
-    color: white; /* White text */
-    padding: 10px 20px; /* Some padding */
-    text-align: center; /* Center text */
-    text-decoration: none; /* No underline */
-    display: inline-block; /* Display as inline block */
-    font-size: 16px; /* Font size */
-    border-radius: 4px; /* Rounded corners */
-    cursor: pointer; /* Change mouse cursor on hover */
-    transition-duration: 0.4s; /* Add a transition effect */
-    margin-top: 20px; /* Add 20 pixels of margin on top */
-  }
-  
-  .read-me-btn:hover {
-    background-color: #3e8e41; /* Darker green on hover */
-  }
-  
 
-  
-  
-  /* introduction*/
+
+/* introduction*/
+.intro {
+
+  margin: 100px 100px 30px 125px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #f4f4f4;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  background-image: url('https://free4kwallpapers.com/uploads/originals/2022/04/20/rubiks-cube-digital-art-wallpaper.jpg');
+
+
+}
+
+.intro img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  // margin-bottom: 1rem;
+  padding: 20px;
+}
+
+.intro h2 {
+  font-size: 30px;
+  margin-bottom: 0.5rem;
+  color: #f9f4f4;
+}
+
+.intro h3 {
+  font-size: 25px;
+  margin: 20px 0 10px 0;
+  color: white;
+}
+
+.intro h4 {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.tag-cmp {
+
+  margin: 30px 19px 20px 66px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  align-items: center;
+  padding: 10px 15px 10px 15px;
+  border-radius: 10px;
+
+}
+
+.tag-cmp p {
+  font-size: 1.2rem;
+  color: #050002;
+}
+
+.ProfBoxes {
+  flex-direction: row;
+  // margin-left:auto;
+  // margin-right: auto;
+  display: flex;
+
+}
+
+div .ProfBoxes {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+p .prof1 {
+  margin-top: auto;
+  font-size: larger;
+}
+
+
+
+/* intro responsiveness*/
+
+
+@media screen and (max-width: 768px) {
   .intro {
-    margin-top: 100px;
-    margin-left: 180px;
-    margin-right:180px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
- 
-    background-color: #f4f4f4;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    /* background: #ececec; */
-    /* background: linear-gradient(to bottom right, #8a2387, #e94057, #f27121); */
-    /* background: linear-gradient(to bottom, #8E2DE2, #4A00E0); */
-    //background: linear-gradient(to right, #343132, #3F5EFB);
-    background: url('https://free4kwallpapers.com/uploads/originals/2022/04/20/rubiks-cube-digital-art-wallpaper.jpg');
-    
-    /* background: linear-gradient(to bottom right, #00c8ef, #e605b2); */
-    /* background: linear-gradient(to bottom left, #33ccff 0%, #ff99cc 100%); */
-    /* background: radial-gradient(circle, #FDB813, #8B4C9B); */
-  
-    /* background: linear-gradient(to bottom, #2980B9, #6DD5FA, #FFFFFF); */
-    
+    margin: 10vw;
   }
-  
+
   .intro img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 1rem;
+    width: 30vw;
+    height: 30vw;
+    max-width: 200px;
+    max-height: 200px;
   }
-  
+
   .intro h2 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-    color: #f9f4f4;
+    font-size: 4vw;
   }
-  
+
   .intro h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: white;
+    font-size: 3vw;
   }
-  
+
   .intro h4 {
-    font-size: 1.2rem;
-    line-height: 1.5;
+    font-size: 2vw;
   }
-  .intro p{
-    font-size: 1.2rem;
-    color: white;
+
+  .intro p {
+    font-size: 3vw;
   }
+}
+
+@media screen and (max-width: 480px) {
+  .intro {
+    margin: 11vw;
+    margin-top: 120px;
+
+  }
+
+  .intro img {
+    width: 50vw;
+    height: 50vw;
+    max-width: 150px;
+    max-height: 150px;
+  }
+
+  .intro h2 {
+    font-size: 6vw;
+  }
+
+  .intro h3 {
+    font-size: 4vw;
+  }
+
+  .intro h4 {
+    font-size: 3vw;
+  }
+
+  .intro p {
+    font-size: 4vw;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 780x) {
+
+  /* CSS code for screens with maximum width of 768px */
+  .tag-cmp {
+    margin-top: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    align-items: center;
+
 
   .Home{
     margin-top: 1.5rem;
@@ -154,40 +273,165 @@
     .intro p{
       font-size: 3vw;
     }
-  }
-  
-  @media screen and (max-width: 480px) {
-    .intro {
-      margin: 11vw;
-      margin-top: 120px;
-      
-    }
-    
-    .intro img {
-      width: 50vw;
-      height: 50vw;
-      max-width: 150px;
-      max-height: 150px;
-    }
-    
-    .intro h2 {
-      font-size: 6vw;
-    }
-    
-    .intro h3 {
-      font-size: 4vw;
-    }
-    
-    .intro h4 {
-      font-size: 3vw;
-    }
-    
-    .intro p{
-      font-size: 4vw;
-    }
-  }
-  
 
+  }
+
+  .tag-cmp p {
+    font-size: 1rem;
+  }
+
+  .ProfBoxes {
+    // display: flex;
+    margin-left: 0;
+    // flex-direction: row;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1.2rem;
+    flex-direction: column;
+  }
+
+  p .prof1 {
+    font-size: medium;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+
+  /* CSS code for screens with maximum width of 450px */
+  .ProfBoxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+  }
+
+
+  .tag-cmp {
+
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2.5rem;
+  }
+
+  .ProfBoxes .tag-cmp p {
+    font-size: 1rem;
+  }
+
+  .tag-cmp p {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+
+  /* CSS code for screens with maximum width of 450px */
+  .ProfBoxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+  }
+
+
+  .tag-cmp {
+
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+  }
+
+  .ProfBoxes .tag-cmp p {
+    font-size: 1rem;
+  }
+
+  .tag-cmp p {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+}
+
+@media only screen and (max-width: 1018px) {
+
+  /* CSS code for screens with maximum width of 768px */
+  .tag-cmp {
+    margin:20px 10px 20px 15px;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .tag-cmp p {
+    font-size: 1rem;
+  }
+
+  .ProfBoxes {
+    flex-direction: row;
+    flex-wrap: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+
+  p .prof1 {
+    font-size: medium;
+  }
+}
+
+
+@media only screen and (max-width: 520px) {
+
+  /* CSS code for screens with maximum width of 768px */
+  .tag-cmp {
+    margin: 20px 10px 20px 10px;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .ProfBoxes .tag-cmp p {
+    font-size: 11px;
+  }
+
+  .ProfBoxes {
+    flex-direction: row;
+    flex-wrap: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+
+  p .prof1 {
+    font-size: medium;
+  }
+}
+
+
+@media only screen and (max-width: 412px) {
+
+  /* CSS code for screens with maximum width of 768px */
+  .tag-cmp {
+    // margin: 20px 10px 10px 0px;
+    // align-items: center;
+    padding: 10px;
+  }
+
+  .ProfBoxes.tag-cmp p {
+    font-size: 12px;
+  }
+
+  .ProfBoxes {
+    flex-direction: row;
+    flex-wrap: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+
+  p .prof1 {
+    font-size: medium;
+  }
 @media only screen and (max-width: 780x) {
     /* CSS code for screens with maximum width of 768px */
     .tag-cmp {
@@ -214,55 +458,38 @@
     p .prof1 {
         font-size: medium;
     }
+
 }
 
-@media only screen and (max-width: 450px) {
-    /* CSS code for screens with maximum width of 450px */
-    .ProfBoxes {
-       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      align-items: center;
-      
-    }
 
-  
-    .tag-cmp {
+
+
+
+@media screen and (max-width: 480px) {
+  .intro {
+    margin: 11vw;
+    margin-top: 120px;
     
-      margin-top: 1rem;
-      margin-left: 2rem;
-      margin-right: 2.5rem;
-    }
+  }
   
-    .ProfBoxes .tag-cmp p {
-      font-size: 1rem;
-    }
-
-    .tag-cmp p {
-        font-size: 1rem;
-        line-height: 1.2;
-      }
+  .intro img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 10px;
+    // margin-bottom: 1rem;
+  }
+  
+  .intro h2 {
+    font-size: 17px;
+    padding: 10px 0;
   }
 
-  @media only screen and (max-width: 650px) {
-    /* CSS code for screens with maximum width of 450px */
-    .ProfBoxes {
-       display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      align-items: center;
-      
-    }
+  .intro h3 {
+    font-size: 14px;
+    margin: 10px;
+  }
 
-  
-    .tag-cmp {
-    
-      margin-top: 1rem;
-      margin-left: auto;
-      margin-right: auto;
-      align-items: center;
-    }
-  
     .ProfBoxes .tag-cmp p {
       font-size: 1rem;
     }
@@ -352,8 +579,67 @@
 
 
 
-  
-  
-
 
   
+  .intro h4 {
+    font-size: 14px;
+  }
+  
+  .intro p{
+    font-size: 10px;
+  }
+
+  .tag-cmp {
+    // margin: 20px 10px 10px 0px;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .ProfBoxes.tag-cmp p {
+    font-size: 12px;
+  }
+
+  .ProfBoxes {
+    flex-direction: row;
+    flex-wrap: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+
+  p .prof1 {
+    font-size: medium;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+
+  /* CSS code for screens with maximum width of 768px */
+  .tag-cmp {
+    // margin: 20px 10px 10px 0px;
+    // align-items: center;
+    padding: 7px;
+  }
+
+  .ProfBoxes.tag-cmp p {
+    font-size: 10px;
+  }
+
+  .ProfBoxes {
+    flex-direction: row;
+    flex-wrap: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+
+  p .prof1 {
+    font-size: medium;
+  }
+}
+
+
+
+
+
+
