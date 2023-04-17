@@ -32,7 +32,7 @@ export const Projects = () => {
 
   return (
     <>
-      <h2 className="head-textt">
+      <h2 className="head-text-project">
         {" "}
         My Creative <span>Portfolio</span> Section{" "}
       </h2>
