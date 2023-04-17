@@ -1,43 +1,43 @@
 export const ProjectData =[
 
     {
-        codeLink: "https://github.com/IAmTamal/ShopCoders",
+        codeLink: "https://github.com/Rahul-Prasad-07/P2P-Lending-CAT",
         description:
-          "An Open source e-commerce application on the way to help all the devs out there get affordable yet authentic swags.",
+          "Peer to Peer(P2P) Lending Decentralized Application which helps borrowers for quick loans from lenders at rates that are generally lower than those traditional financial institutions.",
         imgUrl: 'https://cdn.hashnode.com/res/hashnode/image/upload/v1677321844020/9fc45144-4ab7-4389-bb3a-f1ce63ca2cae.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp',
         projectLink: "https://shop-coders.vercel.app/",
         tags: ["ecommerce", "Next JS", "Web App"],
-        title: "ShopCoders",  
+        title: "P2P Lending CAT",  
     },
 
     {
-        codeLink: "https://github.com/IAmTamal/Aviate-BlocBit",
+        codeLink: "https://github.com/Rahul-Prasad-07/commodities1",
     description:
-      "BlocBit is The ultimate place to learn everything you need to get started about Blockchains, Crypto and Bitcoins. ",
-      imgUrl: 'https://cdn.hashnode.com/res/hashnode/image/upload/v1677321844020/9fc45144-4ab7-4389-bb3a-f1ce63ca2cae.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp',
-      projectLink: "https://shop-coders.vercel.app/",
+      "Commodity Asset Token",
+      imgUrl: 'https://catrwa.com/wp-content/uploads/2023/01/sovereign-elizabeth-ii-3-tr.png',
+      projectLink: "https://catrwa.com/",
       tags: ["ecommerce", "Next JS", "Web App"],
-      title: "ShopCoders", 
+      title: "CAT", 
     },
 
     {
-        codeLink: "https://github.com/IAmTamal/appwrite-docker-wallHub",
+        codeLink: "https://github.com/Rahul-Prasad-07/JPMC-tech-task-3-PY3",
     description:
-      "WallHub is a webapp made with Appwrite, Docker  used to get acess to all the best quality Ultra HD wallpapers for all your screens !!",
-      imgUrl: 'https://cdn.hashnode.com/res/hashnode/image/upload/v1677321844020/9fc45144-4ab7-4389-bb3a-f1ce63ca2cae.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp',
+      "Virtual Internship Project at JPMorgan Chase & Co",
+      imgUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqpKaiBkL4C3_iyTxn3-kw-XBmmY2bvZnWHg&usqp=CAU',
       projectLink: "https://shop-coders.vercel.app/",
       tags: ["ecommerce", "Next JS", "Web App"],
-      title: "ShopCoders", 
+      title: "JP Morgan Chase & Co", 
     },
 
     {
-        codeLink: "https://github.com/IAmTamal/step-into-next",
+        codeLink: "https://github.com/Rahul-Prasad-07/Ethereum-Fundamentals",
     description:
-      " Facing problem with some stuffs and finding hard to find out the solution for it  ? Well, Here is the right place to find one !!",
-      imgUrl: 'https://cdn.hashnode.com/res/hashnode/image/upload/v1677321844020/9fc45144-4ab7-4389-bb3a-f1ce63ca2cae.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp',
+      "In this Repo of Ethereum Fundamentals, you will learn everything about the Ethereum network.",
+      imgUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYvQ9PEpSZpmIro-5yG6cso1RDDpWFAAmrnQ&usqp=CAU',
       projectLink: "https://shop-coders.vercel.app/",
       tags: ["ecommerce", "Next JS", "Web App"],
-      title: "ShopCoders", 
+      title: "Ethereum Fundamentals", 
     },
 
     {

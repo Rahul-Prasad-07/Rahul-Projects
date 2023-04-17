@@ -56,6 +56,8 @@ export const MultipleFetchDataUser = () => {
 
   return (
     <div className='intro'>
+        <Container >
+        <div className='Home'>
         <img  src={avatar_url} alt={name} />
         <h2>Hi 👋, I'm {name}</h2>
         <h3>A passionate and  collaborative Blockchain and DevOps developer from India </h3>
@@ -71,6 +73,8 @@ export const MultipleFetchDataUser = () => {
             <div className="tag-cmp "> <p >DevOps Enthusiastic</p></div>
             
         </div>
+        </div>
+        </Container>
            
         
         {/* <p>I am specialize in Blockchain technology. Experties in Java, JavaScript and Solidity to build smart contracts, consensus algorithms, and data structures.</p>
