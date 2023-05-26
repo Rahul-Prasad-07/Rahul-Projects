@@ -1,7 +1,9 @@
 
 
-import CRUD from '../../assets/projectsImages/CRUD.png';
+import CRUD from '../../assets/projectsImages/CRUD.png'
 import Jarvis from '../../assets/projectsImages/Jarvis.png'
+import Blockchain from '../../assets/projectsImages/Blockchain.png'
+import DevOps from '../../assets/projectsImages/DevOPs.png'
 
 export const ProjectData =[
 
@@ -57,13 +59,13 @@ export const ProjectData =[
     },
 
     {
-        codeLink: "https://github.com/Rahul-Prasad-07/JPMC-tech-task-3-PY3",
+        codeLink: "https://github.com/Rahul-Prasad-07/DevOps-Bootcamp",
     description:
-      "Virtual Internship Project at JPMorgan Chase & Co",
-      imgUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqpKaiBkL4C3_iyTxn3-kw-XBmmY2bvZnWHg&usqp=CAU',
-      projectLink: "https://shop-coders.vercel.app/",
-      tags: ["ecommerce", "Next JS", "Web App"],
-      title: "JP Morgan Chase & Co", 
+      "DevOps Development",
+      imgUrl: DevOps,
+      projectLink: "#",
+      tags: ["DevOps"],
+      title: "DevOps RoadMap", 
     },
 
     {
@@ -75,17 +77,6 @@ export const ProjectData =[
       tags: ["ecommerce", "Next JS", "Web App"],
       title: "Ethereum Fundamentals", 
     },
-
-
-  {
-      codeLink: "https://github.com/Rahul-Prasad-07/Ethereum-Fundamentals",
-  description:
-    "In this Repo of Ethereum Fundamentals, you will learn everything about the Ethereum network.",
-    imgUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYvQ9PEpSZpmIro-5yG6cso1RDDpWFAAmrnQ&usqp=CAU',
-    projectLink: "https://shop-coders.vercel.app/",
-    tags: ["Blockchain"],
-    title: "Ethereum Fundamentals", 
-  },
 
   {
       codeLink: "https://github.com/Rahul-Prasad-07/Crud-Node-Application",
@@ -104,6 +95,15 @@ description:
   projectLink: "#",
   tags: ["Artificial Intelligence"],
   title: "Jarvis", 
+},
+{
+  codeLink: "https://github.com/Rahul-Prasad-07/Go-Blockchain",
+description:
+"Blockchain build in GO Lang",
+imgUrl:Blockchain,
+projectLink: "#",
+tags: ["Blockchain"],
+title: "Go Blockchain", 
 },
  
 ]
