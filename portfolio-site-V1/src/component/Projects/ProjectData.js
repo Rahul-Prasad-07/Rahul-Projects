@@ -1,6 +1,7 @@
 
 
 import CRUD from '../../assets/projectsImages/CRUD.png';
+import Jarvis from '../../assets/projectsImages/Jarvis.png'
 
 export const ProjectData =[
 
@@ -95,5 +96,14 @@ export const ProjectData =[
     tags: ["ecommerce", "Next JS", "Web App"],
     title: "CRUD Node App", 
   },
+  {
+    codeLink: "https://github.com/Rahul-Prasad-07/Jarvis",
+description:
+  "My AI assistance build using OpenAI APIs",
+  imgUrl: Jarvis,
+  projectLink: "#",
+  tags: ["Artificial Intelligence"],
+  title: "Jarvis", 
+},
  
 ]
