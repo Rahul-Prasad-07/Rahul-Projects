@@ -440,6 +440,36 @@ p .prof1 {
 }
 
 
+@media screen and (max-width: 1003px) {
+
+  div .ProfBoxes {
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+.head-textt {
+  font-size: 26px;
+  font-weight: 800;
+  text-align: center;
+  color: #030303;
+  text-transform: capitalize;
+  padding: 24px 0 65px 23px;
+}
+
+
+
+}
+
+@media screen and (max-width: 809px) {
+
+  .intro h3 {
+    font-size: 20px;
+    margin: 20px 0 10px 0;
+    color: white;
+}
+}
+
+
 
 
 

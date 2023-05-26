@@ -61,8 +61,8 @@ export const MultipleFetchDataUser = () => {
         <img  src={avatar_url} alt={name} />
         <h2>Hi 👋, I'm {name}</h2>
         <h3>A passionate and  collaborative Blockchain and DevOps developer from India </h3>
-        <p className='prof1'>My goal is to learn and contribute more & more to build better world for next generation</p>
-       
+        {/* <p className='prof1'>My goal is to learn and contribute more & more to build better world for next generation</p>
+        */}
         <br/>
 
 
