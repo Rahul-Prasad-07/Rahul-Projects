@@ -5,6 +5,9 @@ import Jarvis from '../../assets/projectsImages/Jarvis.png'
 import Blockchain from '../../assets/projectsImages/Blockchain.png'
 import DevOps from '../../assets/projectsImages/DevOPs.png'
 import CrudApi from '../../assets/projectsImages/CrudApi.png'
+import P2P from '../../assets/projectsImages/P2P.png'
+import Todo from '../../assets/projectsImages/Todo.png'
+import Ld from '../../assets/projectsImages/Ld.png'
 
 export const ProjectData =[
 
@@ -13,7 +16,7 @@ export const ProjectData =[
       codeLink: "https://github.com/Rahul-Prasad-07/P2P-Lending-CAT",
       description:
         "Peer to Peer(P2P) Lending Decentralized Application which helps borrowers for quick loans from lenders at rates that are generally lower than those traditional financial institutions.",
-      imgUrl: 'https://cdn.hashnode.com/res/hashnode/image/upload/v1677321844020/9fc45144-4ab7-4389-bb3a-f1ce63ca2cae.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp',
+      imgUrl: P2P,
       projectLink: "https://shop-coders.vercel.app/",
       tags: ["Blockchain"],
       title: "P2P Lending CAT",  
@@ -28,16 +31,43 @@ export const ProjectData =[
     tags: ["Blockchain"],
     title: "CAT", 
   },
-
   {
-      codeLink: "https://github.com/Rahul-Prasad-07/JPMC-tech-task-3-PY3",
+    codeLink: "https://github.com/Rahul-Prasad-07/Go-Blockchain",
   description:
-    "Virtual Internship Project at JPMorgan Chase & Co",
-    imgUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqpKaiBkL4C3_iyTxn3-kw-XBmmY2bvZnWHg&usqp=CAU',
-    projectLink: "https://shop-coders.vercel.app/",
-    tags: ["Web App"],
-    title: "JP Morgan Chase & Co", 
+  "Blockchain build in GO Lang",
+  imgUrl:Blockchain,
+  projectLink: "#",
+  tags: ["Blockchain"],
+  title: "Go Blockchain", 
   },
+  {
+    codeLink: "https://github.com/Rahul-Prasad-07/ETH-Bootcamp/tree/master/LotteryDapp",
+  description:
+  "Decentralized Lottery App",
+  imgUrl:Ld,
+  projectLink: "#",
+  tags: ["Blockchain"],
+  title: "Lottery Dapp", 
+  },
+  {
+    codeLink: "https://github.com/Rahul-Prasad-07/ETH-Bootcamp/tree/master/TodoList",
+  description:
+  "Todo list on Ethereum Blockchain",
+  imgUrl:Todo,
+  projectLink: "#",
+  tags: ["Blockchain"],
+  title: "Todo List Dapp", 
+  },
+
+  // {
+  //     codeLink: "https://github.com/Rahul-Prasad-07/JPMC-tech-task-3-PY3",
+  // description:
+  //   "Virtual Internship Project at JPMorgan Chase & Co",
+  //   imgUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqpKaiBkL4C3_iyTxn3-kw-XBmmY2bvZnWHg&usqp=CAU',
+  //   projectLink: "https://shop-coders.vercel.app/",
+  //   tags: ["Web App"],
+  //   title: "JP Morgan Chase & Co", 
+  // },
 
     {
         codeLink: "https://github.com/Rahul-Prasad-07/DevOps-Bootcamp",
@@ -77,15 +107,7 @@ description:
   tags: ["Artificial Intelligence"],
   title: "Jarvis", 
 },
-{
-  codeLink: "https://github.com/Rahul-Prasad-07/Go-Blockchain",
-description:
-"Blockchain build in GO Lang",
-imgUrl:Blockchain,
-projectLink: "#",
-tags: ["Blockchain"],
-title: "Go Blockchain", 
-},
+
 {
   codeLink: "https://github.com/Rahul-Prasad-07/CRUD-API-GoLang",
 description:
