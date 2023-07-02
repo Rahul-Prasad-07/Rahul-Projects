@@ -23,10 +23,23 @@ body{
   gap: 2rem;
   margin-left: auto;
   color: black;
-  
-  
-  
+
 }
+
+.projectlists {
+  width: 90vw;
+  max-width: 1300px;
+  justify-content: center;
+  margin: 5rem auto;
+  display: grid;
+  gap: 2rem;
+  margin-left: auto;
+  color: black;
+
+}
+
+
+
 
 @media screen and (min-width:768px) {
   .projectlist{
