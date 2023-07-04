@@ -98,7 +98,7 @@ body{
 }
 
 .read-me-btn {
-  background-color: #0000ff;
+  background :linear-gradient(to right, #3257a1, #101011);
   border: none;
   color: white;
   padding: 7px 21px;
@@ -112,9 +112,10 @@ body{
   margin-top: 26px;
 }
 
-.read-me-btn:hover {
-  background-color: #3e8e41; /* Darker green on hover */
-}
+// .read-me-btn:hover {
+//   background: #1d2d29; /* Darker green on hover */
+//   color:#090909;
+// }
 
 .number {
    position: absolute; 
