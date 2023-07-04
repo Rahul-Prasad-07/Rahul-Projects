@@ -49,7 +49,7 @@
     margin: 0.5rem;
 
     &:hover {
-      background-color: blue;
+      background: linear-gradient(to right, #3257a1, #101011);
       color: #fff;
     }
 
@@ -60,7 +60,7 @@
   }
 
   .item-active {
-    background-color: blue;
+    background: linear-gradient(to right, #3257a1, #101011);
     color: #fff;
   }
 }

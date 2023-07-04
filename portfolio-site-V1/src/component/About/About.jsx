@@ -13,8 +13,13 @@ export const About = () => {
         My goal is to learn and contribute more & more to build better world for
         <span> next generation</span>{" "}
       </h2>
-     
-      <div className="about__profiles">
+
+{/*      
+      <div className="about__profiles"> */}
+
+
+      <div className="about__profiles projectlists">
+
         <div
           className="about__profile-item"
           whileInView={{ opacity: 1 }}
