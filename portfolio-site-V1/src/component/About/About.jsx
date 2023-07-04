@@ -14,7 +14,12 @@ export const About = () => {
         <span> next generation</span>{" "}
       </h2>
 
+{/*      
+      <div className="about__profiles"> */}
+
+
       <div className="about__profiles projectlists">
+
         <div
           className="about__profile-item"
           whileInView={{ opacity: 1 }}
@@ -34,8 +39,7 @@ export const About = () => {
           <hr />
           <p className="abtdesc" style={{ marginTop: 25 }}>
             {" "}
-            I will make a responsive, clean and eye catching interface for the
-            user with React, HTML, CSS, and other latest technologies.
+            Building Decentralized app using Ethereum Blockchain, Solidity and other latest technologies like.
           </p>
         </div>
 
@@ -82,8 +86,7 @@ export const About = () => {
           <hr />
           <p className="abtdesc" style={{ marginTop: 25 }}>
             {" "}
-            I will make a responsive, clean and eye catching interface for the
-            user with React, HTML, CSS, and other latest technologies.
+            Delving deep into the world of DevOps, I am on a mission to revolutionize the Web3 development landscape.
           </p>
         </div>
 
@@ -106,8 +109,7 @@ export const About = () => {
           <hr />
           <p className="abtdesc" style={{ marginTop: 25 }}>
             {" "}
-            I will make a responsive, clean and eye catching interface for the
-            user with React, HTML, CSS, and other latest technologies.
+            I will write an extensive technical blogs on Medium and Hashnode for latest technologies.
           </p>
         </div>
       </div>
