@@ -8,6 +8,9 @@ import CrudApi from '../../assets/projectsImages/CrudApi.png'
 import P2P from '../../assets/projectsImages/P2P.png'
 import Todo from '../../assets/projectsImages/Todo.png'
 import Ld from '../../assets/projectsImages/Ld.png'
+import Venmo from '../../assets/projectsImages/Venmo.png'
+import PoW from '../../assets/projectsImages/PoW.png'
+import PFAE from '../../assets/projectsImages/PFAE.png'
 
 export const ProjectData =[
 
@@ -54,10 +57,41 @@ export const ProjectData =[
   description:
   "Todo list on Ethereum Blockchain",
   imgUrl:Todo,
-  projectLink: "#",
+  projectLink: "https://eth-bootcamp.vercel.app/",
   tags: ["Blockchain"],
   title: "Todo List Dapp", 
   },
+
+  {
+    codeLink: "https://github.com/Rahul-Prasad-07/ETH-Bootcamp/tree/master/Venmo_Dapp",
+  description:
+  "A Decentralized Payment App",
+  imgUrl:Venmo,
+  projectLink: "https://eth-bootcamp-venmo.vercel.app/",
+  tags: ["Blockchain"],
+  title: "Venmo Dapp",
+  },
+
+  {
+    codeLink: "https://github.com/Rahul-Prasad-07/PoW-Blockchain-Go/tree/main",
+  description:
+  "**IN BUILDING**  ~ Proof of Work Blockchain build in Golang",
+  imgUrl:PoW,
+  projectLink: "#",
+  tags: ["Blockchain"],
+  title: "PoW Blockchain in Golang",
+  },
+
+  {
+    codeLink: "https://github.com/Rahul-Prasad-07/-Exogenous-Stablecoin",
+  description:
+  "**In Research** ~ Pegged/Floting Algorithmic Exogenous Stablecoin",
+  imgUrl: PFAE,
+  projectLink: "#",
+  tags: ["Blockchain"],
+  title: "StableCoin",
+  },
+
 
   // {
   //     codeLink: "https://github.com/Rahul-Prasad-07/JPMC-tech-task-3-PY3",
