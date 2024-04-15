@@ -7,19 +7,16 @@ export const About = () => {
 
   return (
     <>
-    
       <h2 className="head-textt">
         {" "}
         My goal is to learn and contribute more & more to build better world for
         <span> next generation</span>{" "}
       </h2>
 
-{/*      
+      {/*      
       <div className="about__profiles"> */}
 
-
       <div className="about__profiles projectlists">
-
         <div
           className="about__profile-item"
           whileInView={{ opacity: 1 }}
@@ -27,7 +24,7 @@ export const About = () => {
           transition={{ duration: 0.5, type: "tween" }}
         >
           <img
-            src="https://appinventiv.com/wp-content/uploads/sites/1/2022/11/blockchain-in-travel-industry.webp"
+            src="https://kruschecompany.com/wp-content/uploads/2024/02/Blockchain-development-2-1280x595.webp"
             alt="frontend"
             className="abtlogo"
           />
@@ -39,7 +36,8 @@ export const About = () => {
           <hr />
           <p className="abtdesc" style={{ marginTop: 25 }}>
             {" "}
-            Building Decentralized app using Ethereum Blockchain, Solidity and other latest technologies like.
+            Building Decentralized app using Ethereum Blockchain, Solidity and
+            other latest technologies like.
           </p>
         </div>
 
@@ -86,7 +84,8 @@ export const About = () => {
           <hr />
           <p className="abtdesc" style={{ marginTop: 25 }}>
             {" "}
-            Delving deep into the world of DevOps, I am on a mission to revolutionize the Web3 development landscape.
+            Delving deep into the world of DevOps, I am on a mission to
+            revolutionize the Web3 development landscape.
           </p>
         </div>
 
@@ -109,7 +108,8 @@ export const About = () => {
           <hr />
           <p className="abtdesc" style={{ marginTop: 25 }}>
             {" "}
-            I will write an extensive technical blogs on Medium and Hashnode for latest technologies.
+            I will write an extensive technical blogs on Medium and Hashnode for
+            latest technologies.
           </p>
         </div>
       </div>
